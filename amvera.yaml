@@ -4,10 +4,10 @@ description: Резюме Пихтулова Евгения Александро
 version: 1.0.0
 
 build:
-  type: static
-  output: ./
+  type: python
+  requirements: requirements.txt
 
 run:
-  type: static
+  type: python
   port: 8080
-  index: index.html
+  script: app.py
