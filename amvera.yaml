@@ -1,0 +1,13 @@
+kind: application
+name: pihtulov-resume
+description: Резюме Пихтулова Евгения Александровича
+version: 1.0.0
+
+build:
+  type: static
+  output: ./
+
+run:
+  type: static
+  port: 8080
+  index: index.html
