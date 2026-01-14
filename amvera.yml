@@ -1,13 +1,13 @@
-kind: application
-name: pihtulov-resume
-description: Резюме Пихтулова Евгения Александровича
-version: 1.0.0
-
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: "3.11"
 build:
-  type: python
-  requirements: requirements.txt
-
+  requirementsPath: requirements.txt
+  useCache: true
 run:
-  type: python
-  port: 8080
-  script: app.py
+  scriptName: app.py
+  command: null
+  persistenceMount: /data
+  containerPort: "80"
